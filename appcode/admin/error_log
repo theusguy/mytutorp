@@ -1,0 +1,1 @@
+[27-Jan-2019 22:59:46 Asia/Karachi] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/mytutorp/public_html/admin/admins.php on line 100

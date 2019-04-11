@@ -1,0 +1,28 @@
+[27-Feb-2019 21:23:48 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[27-Feb-2019 21:23:48 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[27-Feb-2019 21:23:48 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[04-Mar-2019 06:30:20 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 6
+[04-Mar-2019 06:30:20 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 7
+[04-Mar-2019 06:30:20 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 8
+[04-Mar-2019 06:30:20 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 9
+[04-Mar-2019 06:30:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 13
+[04-Mar-2019 06:30:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/mytutorp/public_html/tutorsignup.php on line 14
+[04-Mar-2019 06:30:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 15
+[04-Mar-2019 06:30:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/mytutorp/public_html/tutorsignup.php on line 16
+[04-Mar-2019 08:24:38 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 6
+[04-Mar-2019 08:24:38 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 7
+[04-Mar-2019 08:24:38 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 8
+[04-Mar-2019 08:24:38 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 9
+[04-Mar-2019 08:24:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 13
+[04-Mar-2019 08:24:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/mytutorp/public_html/tutorsignup.php on line 14
+[04-Mar-2019 08:24:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/mytutorp/public_html/tutorsignup.php on line 15
+[04-Mar-2019 08:24:38 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/mytutorp/public_html/tutorsignup.php on line 16
+[04-Mar-2019 21:12:06 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[04-Mar-2019 21:12:06 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[04-Mar-2019 21:12:06 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[06-Mar-2019 12:14:56 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[06-Mar-2019 12:14:56 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[06-Mar-2019 12:14:56 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[12-Mar-2019 15:56:58 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[12-Mar-2019 15:56:58 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
+[12-Mar-2019 15:56:58 Asia/Karachi] Stripe Notice: Undefined property of Stripe_Charge instance: card
