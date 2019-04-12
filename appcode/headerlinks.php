@@ -2,6 +2,9 @@
 include("inc/config.php");
 include("inc/functions.php");
 ?>
+
+<!-- start of HTML Code
+Header used for all pages on MTP -->
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -55,7 +58,7 @@ include("inc/functions.php");
 	<link rel="stylesheet" href="css/colors.php?color=44aaac" type="text/css" /> <!-- Theme Color -->
 	<link rel="stylesheet" href="css/hostingfonts.css" type="text/css" />
 	<link rel="stylesheet" href="css/hosting.css" type="text/css" />
-	<title>MyTutorPlug || A Complete Eassy Writing Website</title>
+	<title>MyTutorPlug || A Complete Essay Writing Website</title>
 	<style media="screen">
 	html {
 scroll-behavior: smooth;
@@ -67,23 +70,33 @@ scroll-behavior: smooth;
 	var pricexx;
 </script>
 </head>
+
+<!-- Start of Body -->
 <body class="stretched">
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
+
 		<!-- Top Bar
 		============================================= -->
-
 		<div id="top-bar" class="center dark" style="background-color: #15888a">
-			<p class="mb-0 text-white" style="font-size: 14px;">Beta Release: Serving Bay Area Only</p>
+			<p class="mb-0 text-white" style="font-size: 14px;"><strong>Beta Release:</strong> Serving Bay Area Only</p>
         <!-- <a href="index.php" class="ml-2 font-primary t700 text-white">(01) 12345-456789</a> -->
-		</div>
+		</div> <!-- End of Top Bar -->
+
 		<!-- Header
 		============================================= -->
 		<header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark">
+
+			<!-- Header-wrap
+			============================================= -->
 			<div id="header-wrap">
+
+				<!-- Container
+				============================================= -->
 				<div class="container clearfix">
 					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
 					<!-- Logo
 					============================================= -->
 					<div id="logo" style="width:230px;">
@@ -96,49 +109,55 @@ scroll-behavior: smooth;
 					============================================= -->
 					<nav id="primary-menu" class="not-dark with-arrows">
 
+						<!-- nav bar orginal list options -->
 						<ul class="not-dark">
 							<li class="current"><a href="index.php"><div>Home</div></a></li>
-
-							<li><a href="#about"><div>About Us</div></a></li>
-								<li><a href="#Refund_Policy"><div>Refund Policy</div></a></li>
+							<li><a href="#about"><div>About</div></a></li>
+							<li><a href="#Refund_Policy"><div>Refund Policy</div></a></li>
 							<li><a href="#contact"><div>Contact</div></a></li>
 
-                <?php if(isset($_SESSION['USER_ID'])) { ?>
-									<li><a href="#"><div>My Account</div></a>
-										<ul>
+							<!-- navbar option with PHP logic checking if user-login is active or not				 
+							================================================================-->
+                			<?php if(isset($_SESSION['USER_ID'])) { ?>
+							<li><a href="#"><div>My Account</div></a>
 
-                   <?php if($_SESSION['USER_TYPE']==1){ ?>
-                    <li><a href="received_orders.php">Received Orders</a></li>
-                    <li><a href="withdraw_list.php">Withdraw List</a></li>
-                    <li><a href="profile.php">My Profile</a></li>
-                    <?php }else{ ?>
+								<!-- list under my account tab on navbar 
+								============================================-->
+								<ul>
+									<!-- testing is user is tutor or student... tutor is USER_TYPE = 1 -->
+                   					<?php if($_SESSION['USER_TYPE']==1){ ?>
+                    					<li><a href="received_orders.php">Received Orders</a></li>
+                    					<li><a href="withdraw_list.php">Withdraw List</a></li>
+                    					<li><a href="profile.php">My Profile</a></li>
+                    				<?php }else{ ?>
+                  						<li><a href="my_orders.php">My Orders</a></li>
+                  						<li><a href="new_order.php">Ask for Essay</a></li>
+                    					<li><a href="account.php">My Profile</a></li>
+									<?php } ?>
+                    					<li><a href="logout.php">Log Out</a></li>
+      								<?php } ?>
+                  					<!-- <li><a href="forget_password.php">Forget Password</a></li> -->
+                  					<!-- testing if there isnt even an active user logged in then showing signup option -->
+									<?php if(!isset($_SESSION['USER_ID'])) { ?>
+										<li><a href="signup.php">Signup</a></li>
+									<?php } ?>
+                				</ul> <!-- end of list under my account tab on navbar -->
 
-                  <li><a href="my_orders.php">My Orders</a></li>
-                  <li><a href="new_order.php">Ask for Essay</a></li>
-                    <li><a href="account.php">My Profile</a></li>
-<?php } ?>
+              				</li> <!-- end of my account tab option itself -->
+              				
+						</ul> <!-- end of nav bar orginal list options -->
 
-                    <li><a href="logout.php">Log Out</a></li>
-
-                    <?php } ?>
-                  <!-- <li><a href="forget_password.php">Forget Password</a></li> -->
-
-										 <?php if(!isset($_SESSION['USER_ID'])) { ?>
-										  <li><a href="signup.php">signup</a></li>
-											<?php } ?>
-                </ul>
-              </li>
-						</ul>
-
-						<!-- Top Search
+						<!-- Nav bar Far-Rightmost navbar option that looks like button
 						============================================= -->
-						  <?php if(!isset($_SESSION['USER_ID'])) { ?>
-						<a href="login.php" class="button bg-white text-dark button-light button-rounded color">Login</a>
-<?php } ?>
-					</nav><!-- #primary-menu end -->
+						<?php if(!isset($_SESSION['USER_ID'])) { ?>
+							<a href="login.php" class="button bg-white text-dark button-light button-rounded color">Login</a>
+						<?php } ?>
 
-				</div>
+					</nav><!-- #primary-menu end of navbar -->
 
-			</div>
-
+				</div> <!-- end of container div -->
+			</div> <!-- end of header wrap -->
 		</header><!-- #header end -->
+	</div> <!-- End of Document Wrapper -->
+
+
